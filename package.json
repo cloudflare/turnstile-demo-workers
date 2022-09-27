@@ -1,0 +1,11 @@
+{
+	"private": true,
+	"version": "0.0.0",
+	"scripts": {
+		"deploy": "wrangler publish src/index.mjs",
+		"dev": "wrangler dev src/index.mjs --local"
+	},
+	"devDependencies": {
+		"wrangler": "^2.0.0"
+	}
+}

@@ -1,0 +1,4 @@
+name = "turnstile-demo-workers"
+workers_dev = true
+
+compatibility_date = "2022-09-26"
