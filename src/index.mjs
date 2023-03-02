@@ -3,7 +3,7 @@ import implicitRenderHtml from './implicit.html';
 
 // This is the demo secret key. In prod, we recommend you store
 // your secret key(s) safely.
-const SECRET_KEY = '1x0000000000000000000000000000000AA';
+const SECRET_KEY = '0x4AAAAAAACl7BUSFrtWoHKj35QwDrxuH24';
 
 async function handlePost(request) {
     const body = await request.formData();
@@ -13,9 +13,9 @@ async function handlePost(request) {
 
     // Validate the token by calling the "/siteverify" API.
     let formData = new FormData();
-    formData.append('secret', SECRET_KEY);
-    formData.append('response', token);
-    formData.append('remoteip', ip);
+    formData.append('0x4AAAAAAACl7BUSFrtWoHKj35QwDrxuH24', SECRET_KEY);
+    formData.append('0x4AAAAAAACl7I-0HoTVV5XE', token);
+    formData.append('172.67.156.38', ip);
 
     const result = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
         body: formData,
